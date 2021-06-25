@@ -1,8 +1,10 @@
+const inquirer = require('inquirer');
+
 class Master {
     masterPrompt = () => inquirer.prompt([
         {
             type: 'list',
-            name: 'choice',
+            name: 'answer',
             message: 'What would you like to do?',
             choices: [
                 {
